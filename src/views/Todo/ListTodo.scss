@@ -1,0 +1,36 @@
+button {
+    cursor: pointer; //khi di chuot vao button no tu dong chuyen qua ban tay
+}
+
+.todo-list-container {
+    .add-todo-list {
+        .add {
+            margin: 0 10px;
+        }
+    }
+
+    .list-todo-content {
+        width: 400px;
+        margin: 0 auto;
+        text-align: left;
+
+        .todo-child {
+            &:first-child {
+                border-top: 1px solid grey;
+            }
+
+            height: 40px;
+            border-bottom: 1px solid grey;
+            margin: 10px;
+            font-size: calc(5px + 2vmin);
+
+            .edit {
+                margin: 5px;
+            }
+
+            .delete {
+                margin: 5px;
+            }
+        }
+    }
+}
